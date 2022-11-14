@@ -7,13 +7,13 @@ const {
     deleteUser
 } = require('../../controllers/user-controller');
 
-// set up GET and POST at /api/users
+// GET and POST at /api/users
 router
 .route('/')
 .get(getAllUsers)
 .post(createUser);
 
-// Set up GET one, PUT, and DELETE at /api/users/:id
+// GET one, PUT, and DELETE at /api/users/:id
 router
 .route('/:id')
 .get(getUserById)
