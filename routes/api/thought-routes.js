@@ -15,7 +15,7 @@ router.route('/').get(getThoughts);
 // POST thought at /api/thoughts/<userId>
 router.route('/:userId').post(addThought);
 
-// GET single thought at /api/thoughts/<thoughtId>
+// GET and PUT single thought at /api/thoughts/<thoughtId>
 router.route('/:thoughtId')
 .get(getThoughtById)
 .put(updateThought);
